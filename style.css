@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+:root {
+
+    /* cores */
+
+    --preto: #0D0D0D;
+    --branco: #F2F2F2;
+    --preto-2: #141212;
+    --amarelo: #F2C335;
+
+
+    /* tipografia */
+
+    --font: 'Lato', sans-serif;
+
+}
+
+html {
+    font-family: var(--font);
+}
+
+body {
+    background: var(--preto);
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.container .container-input {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    /* recurso para responsivo */
+}
+
+.input-new,
+.btn-input {
+    border: none;
+    outline: none;
+    padding: 1rem;
+}
+
+.input-new {
+    border-radius: 1rem;
+    width: 20rem;
+}
+
+.btn-input {
+    border-radius: 50%;
+    background: var(--preto-2);
+    color: #F2F2F2;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn-input:hover {
+    background: #191919;
+}
+
+.btn-input i {
+    font-size: 1rem;
+}
+
+#to-dolist {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    gap: 1rem;
+    padding: 0;
+}
+
+#to-dolist li {
+    list-style: none;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    transition: .4s;
+    align-items: center;
+}
+
+#to-dolist li:hover {
+    background: var(--preto-2);
+    border-radius: 1rem;
+    padding-left: 1rem;
+}
+
+#btn-ok {
+    background: var(--amarelo);
+    font-size: 1rem;
+    color: var(--branco);
+    cursor: pointer;
+    border: none;
+    padding: .4rem .8rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+#btn-ok:hover {
+    background: #574309;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <h1>To Do List | MG</h1>
+    <div class="container">
+        <div class="container-input">
+            <input type="text" class="input-new" id="input-new" placeholder="Digite sua tarefa">
+            <button id="btn-input" onclick="novaTarefa()" class="btn-input"
+                title="Clique aqui para adicionar uma nova tarefa">
+                <i class='bx bx-down-arrow-alt'></i>
+            </button>
+        </div>
+        <div class="container-lista">
+            <!-- lista -->
+            <ul id="to-dolist">
+
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
